@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+@-webkit-keyframes myMove2{
+	0% {-webkit-transform:rotate(0deg);text-shadow:0px 0px 20px #00f;}
+	25%{-webkit-transform:rotate(90deg);text-shadow:0px 0px 20px #0ff;}
+	50%{-webkit-transform:rotate(180deg);text-shadow:0px 0px 20px #f00;}
+	75%{-webkit-transform:rotate(270deg);text-shadow:0px 0px 20px #0f0;}
+	100%{-webkit-transform:rotate(360deg);text-shadow:0px 0px 20px #00f;}
+}
+@-webkit-keyframes myMove1{
+	from {-webkit-transform:rotate(30deg);}
+	to{-webkit-transform:rotate(-30deg);}
+}
+#rotate {
+	border: 1px solid #0000FF;
+	-webkit-border-radius:13px;
+	width:300px;
+	position:absolute;
+	top:200px;
+	text-align:center;
+	left:300px;
+}
+h1 { 
+	text-shadow:0px 0px 20px #00f;
+}
+
+#rotate:hover{
+	-webkit-animation: myMove2 10s infinite;
+}
+
+#button{
+	position:absolute;
+	top:100px;
+	left:300px;
+	background:#0000FF;
+	color:#FFFFFF;
+	text-align:center;
+	width:100px;
+	height:40px;
+	-webkit-border-radius:33px 33px 10px 10px;
+	-webkit-transition:-webkit-border-radius 0.5s,top 0.5s,left 0.5s,background 0.5s;
+	-webkit-box-shadow: rgb(30, 53, 65) 5px 5px 0px;
+}
+
+#button:hover{
+	-webkit-border-radius:10px 10px 33px 33px;
+	top:90px;
+	left:330px;
+	background:#6D6DFF;
+}
